@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-color:  black;
+    text-align: center;
+    padding: 20px;
+}
+body
+{
+    background-color:  #303030;
+}
+section
+{
+    background-color:whitesmoke;
+}
+.menu
+{
+    padding: 30px;
+    background-color: black;
+}
+ul a
+{
+    color: white;
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+
+span:hover 
+{
+    padding: 10px;
+    border-bottom: solid 3px red;
+}
+.banner 
+{
+    text-align: center;
+    
+}
