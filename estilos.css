@@ -11,11 +11,16 @@ header
 }
 body
 {
-    background-color:  #303030;
+    background-color:  black;
 }
 section
 {
-    background-color:whitesmoke;
+    
+	margin:50px;
+	background-color : #303030;
+text-align: center;
+	
+
 }
 .menu
 {
@@ -39,4 +44,31 @@ span:hover
 {
     text-align: center;
     
+}
+
+h2
+{
+	color : white;
+	padding: 30px;
+	text-align: left;
+}
+
+
+
+.vertodos
+{
+	color : white;
+	padding: 30px;
+	text-decoration: none;
+	
+}
+
+
+
+footer
+{
+	background-color : red;
+	padding: 30px;
+	text-align: left;	
+	
 }
