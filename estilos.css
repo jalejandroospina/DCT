@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:   Bebas Neue;
+    
+    
 }
 
 header
@@ -11,14 +14,18 @@ header
 }
 body
 {
-    background-color:  black;
+     background-color: black;
+    
+    
+
 }
 section
 {
     
 	margin:50px;
-	background-color : #303030;
-text-align: center;
+	
+    text-align: center;
+    
 	
 
 }
@@ -26,6 +33,9 @@ text-align: center;
 {
     padding: 30px;
     background-color: black;
+    font-weight: bold;
+    font-size: 130%;
+    
 }
 ul a
 {
@@ -38,19 +48,21 @@ ul a
 span:hover 
 {
     padding: 10px;
-    border-bottom: solid 3px red;
+    border-bottom: solid 3px #ac0404;
 }
-.banner 
+ /*.banner 
 {
-    text-align: center;
+    
     
 }
+*/
 
-h2
+h2,h3
 {
 	color : white;
-	padding: 30px;
-	text-align: left;
+	margin: 10px;
+	text-align: center;
+   
 }
 
 
@@ -67,8 +79,21 @@ h2
 
 footer
 {
-	background-color : red;
-	padding: 30px;
-	text-align: left;	
+	background-color : #ac0404;
+	padding: 10px;
+	text-align: center;	
 	
 }
+.titles
+{
+    background-color: #ac0404; 
+    height: 40px;
+    font-size: 150%;
+   
+}
+p
+{
+    color : white;
+	
+}
+
