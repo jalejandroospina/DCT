@@ -23,7 +23,6 @@ section
 {
     
 	margin:50px;
-	
     text-align: center;
     
 	
@@ -31,7 +30,7 @@ section
 }
 .menu
 {
-    padding: 30px;
+    
     background-color: black;
     font-weight: bold;
     font-size: 130%;
@@ -48,7 +47,9 @@ ul a
 span:hover 
 {
     padding: 10px;
-    border-bottom: solid 3px #ac0404;
+   border-bottom: solid 3px #ac0404;
+    border-bottom: unset 5px #ac0404;
+    
 }
  /*.banner 
 {
@@ -57,12 +58,10 @@ span:hover
 }
 */
 
-h2,h3
+h2
 {
 	color : white;
-	margin: 10px;
-	text-align: center;
-   
+	font-size: 300%;
 }
 
 
@@ -79,21 +78,40 @@ h2,h3
 
 footer
 {
-	background-color : #ac0404;
+	background-color :#ac0404 ;
 	padding: 10px;
-	text-align: center;	
+
+    
+        text-align: center;
+        margin: 0;
+        padding: 10;
+        color: white;
+        font-family: 'Russo One', sans-serif;
+        font-size: 70%;
+        letter-spacing: 1px;
+	
 	
 }
 .titles
 {
-    background-color: #ac0404; 
-    height: 40px;
-    font-size: 150%;
-   
+    
+
+    width: 260px;
+    height: 2px;
+    margin-left: 450px;
+    background-image: 
+    linear-gradient(to right, ghostwhite, #7d0409);
+ 
 }
+
 p
 {
     color : white;
 	
 }
+
+
+
+
+
 
