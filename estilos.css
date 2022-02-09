@@ -6,11 +6,21 @@
     
 }
 
+
+
+.topLine
+{
+    height: 2px; 
+    color: #ac0404; 
+    background-image: 
+    linear-gradient(to right, red, #ac0404);  
+}
 header
 {
     background-color:  black;
     text-align: center;
     padding: 20px;
+    
 }
 body
 {
@@ -21,9 +31,13 @@ body
 }
 section
 {
-    
+    display: flex;
+    flex-direction: column;
 	margin:50px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     
 	
 
@@ -31,7 +45,7 @@ section
 .menu
 {
     
-    background-color: black;
+    /*background-color: black;*/
     font-weight: bold;
     font-size: 130%;
     
@@ -47,8 +61,8 @@ ul a
 span:hover 
 {
     padding: 10px;
-   border-bottom: solid 3px #ac0404;
-    border-bottom: unset 5px #ac0404;
+    border-bottom: solid 3px #ac0404;
+    
     
 }
  /*.banner 
@@ -63,52 +77,122 @@ h2
 	color : white;
 	font-size: 300%;
 }
-
-
-
-.vertodos
+h3
 {
 	color : white;
-	padding: 30px;
+	font-size: 300%;
+}
+
+
+.verMas
+{
+	color : white;
 	text-decoration: none;
-	
+    font-size: 100%;
+    padding-top: 5px;
+    
 }
 
 
 
-footer
-{
-	background-color :#ac0404 ;
-	padding: 10px;
 
-    
-        text-align: center;
-        margin: 0;
-        padding: 10;
-        color: white;
-        font-family: 'Russo One', sans-serif;
-        font-size: 70%;
-        letter-spacing: 1px;
-	
-	
-}
-.titles
+.line
 {
     
-
-    width: 260px;
-    height: 2px;
-    margin-left: 450px;
+    
+    width: 180px;
+    height: 1px; 
+    color: #ac0404; 
     background-image: 
-    linear-gradient(to right, ghostwhite, #7d0409);
+    linear-gradient(to right, white, #ac0404);
  
 }
 
 p
 {
     color : white;
+    
 	
 }
+
+footer
+{
+	    background-color :black;
+	    padding: 10px;
+        text-align: center;
+        color: white;  
+        font-size: 70%;
+        letter-spacing: 1px;
+		
+}
+h2 a
+{
+    text-decoration: none;
+    color: white;
+}
+article
+{
+    padding-top: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+    
+
+}
+
+.Band
+{
+    display: flex;
+    flex-direction: column;
+	margin:50px;
+    text-align: left;
+    align-items:flex-start;
+    
+    
+	
+
+}
+.lineUp
+{
+    text-align: left;
+}
+section p
+{
+    
+    padding-top: 20px;
+    letter-spacing: 1px;
+	
+}
+
+
+.contactBack
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url(./Images/Pattern.jpg )
+    
+}
+form
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 100px;
+   
+
+}
+input
+{
+    width: 320px;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+.button
+{
+    width: 60px;  
+    
+}
+
+
 
 
 
