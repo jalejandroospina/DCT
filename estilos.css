@@ -6,8 +6,6 @@
     
 }
 
-
-
 .topLine
 {
     height: 2px; 
@@ -19,15 +17,12 @@ header
 {
     background-color:  black;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     
 }
 body
 {
      background-color: black;
-    
-    
-
 }
 section
 {
@@ -38,62 +33,68 @@ section
     justify-content: center;
     align-items: center;
     align-content: center;
-    
-	
+
 
 }
-.menu
+
+
+span a
 {
-    
-    /*background-color: black;*/
-    font-weight: bold;
-    font-size: 130%;
-    
-}
-ul a
-{
-    color: white;
+    color : white;
+	font-size: 150%;
     padding: 20px;
-    text-align: left;
-    text-decoration: none;
+    text-align: center; 
 }
 
 span:hover 
 {
-    padding: 10px;
+   
     border-bottom: solid 3px #ac0404;
     
     
 }
- /*.banner 
-{
-    
-    
-}
-*/
 
-h2
+
+h1
 {
 	color : white;
 	font-size: 300%;
+    text-align: center;
+    ;
+}
+h2
+{
+    color : white;
+	font-size: 200%;
+    text-align: center;
+    
+    
 }
 h3
 {
 	color : white;
-	font-size: 300%;
+	font-size: 100%;
+    text-align: center;
+    
 }
-
-
-.verMas
+a
 {
-	color : white;
-	text-decoration: none;
-    font-size: 100%;
-    padding-top: 5px;
+    color: white;
+    padding-top: 20px;
+    text-decoration: none;
     
 }
 
-
+p
+{
+    color : white;
+    
+	
+}
+li
+{
+    text-decoration: none;
+}
 
 
 .line
@@ -104,16 +105,11 @@ h3
     height: 1px; 
     color: #ac0404; 
     background-image: 
-    linear-gradient(to right, white, #ac0404);
+    linear-gradient(to right, white, black);
  
 }
 
-p
-{
-    color : white;
-    
-	
-}
+
 
 footer
 {
@@ -139,22 +135,8 @@ article
 
 }
 
-.Band
-{
-    display: flex;
-    flex-direction: column;
-	margin:50px;
-    text-align: left;
-    align-items:flex-start;
-    
-    
-	
 
-}
-.lineUp
-{
-    text-align: left;
-}
+
 section p
 {
     
@@ -176,6 +158,7 @@ form
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
    padding: 100px;
    
 
@@ -184,7 +167,7 @@ input
 {
     width: 320px;
     padding: 6px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .button
 {
@@ -192,6 +175,376 @@ input
     
 }
 
+.contacto
+{
+    
+    color: #ac0404;
+    
+    
+
+}
+.banner
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 400px;
+  background-color:#ac0404;
+  opacity:0.9;
+ 
+}
+.lineUp
+{
+   
+  margin-left: 50px;
+  text-align: left;
+   
+}
+.titlelineUp
+{
+    text-align: left;
+    margin-left: 120px;
+}
+.gallery
+{
+    width:  400px;
+    height: 400px;
+    
+}
+.concerts
+{
+    width:  512px;
+    height: 288px;
+    
+}
+
+/********** Grid Areas *********/
+#grid
+{
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "contenido"
+    "pie";
+   
+}
+#header
+{
+    grid-area: header;
+}
+nav
+{ 
+    grid-area: menu;
+}
+#contenido
+{
+    grid-area: contenido;
+}
+#footer
+{
+    grid-area: pie;
+}
+
+
+
+/********** Flex ********/
+
+.flexSection
+{
+  display:flex;
+  flex-direction:row;
+  align-items:flex-start;
+  
+}
+
+.flexContacto
+{
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+    align-items: baseline;  
+    
+}
+.flexMenu 
+{
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ padding-top: 20px;
+           
+}
+
+
+.flexBand
+{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content: center;
+}
+
+.flexLineUp
+{
+    margin-left: 150px;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: left;
+
+}
+.flexGallery
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: cneter;
+    align-items: center;
+    align-content: center;
+}
+.flexMain
+{
+    display: flex;
+}
+
+
+/********* Media Queries ******/
+
+/*******Smartphone********/
+@media (max-width : 480px)
+{
+    #grid
+    {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "menu "
+        "contenido"
+        "pie";   
+        grid-template-columns: 100%;
+    }
+
+    
+    .flexMenu 
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:flex-start;
+        align-items: flex-start;
+        align-content: center;
+          
+    }
+     
+
+    .flexContacto
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      
+    }
+    .flexSection
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:flex-start;
+        align-items: center;
+        align-content: center; 
+    
+    
+    }
+    .imgBanner 
+    {
+        
+        width:400px;
+    }
+    iframe
+    {
+        width:400px;
+    }
+    .banner
+    {
+        width:400px;
+        height: 150px;
+        
+    }
+    .line
+    {
+        color: black; 
+    }
+/************** Band *****************/
+    .flexBand
+    {
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    }
+
+    .flexLineUp
+    {
+        
+        
+        flex-direction:column;
+        margin-left: 20px;
+     
+    }
+    .lineUp
+    {
+        margin-left: 0px;
+        
+    }
+    .titlelineUp
+    {
+        text-align: left;
+        margin-left: 25px;
+    }
+    .imgLineUp 
+    {
+        
+        width:400px;
+    }
+ /************** Videos *****************/
+    iframe
+    {
+        width: 400px;
+        height: 300px;
+    }   
+
+ /************** Gallery *****************/
+    .flexGallery
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start ;
+        align-items: center;
+        align-content: center;
+    }
+/************** Concerts *****************/
+    .flexConcerts
+    {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .concerts
+    {
+        width:  400px;
+    
+    }
+/************** Contact*****************/
+    form
+    {
+    
+    padding: 50px;
+    
+    }
+    
+
+
+/************Tablet******************/
+@media (min-width: 481px) and
+ (max-width: 1023px)
+{
+    #grid
+    {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "menu "
+        "contenido"
+        "pie";   
+        grid-template-columns: 100%;
+    }
+    .flexMenu 
+    {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content:center;
+        align-items: center;
+        align-content: center;
+          
+    }
+    .imgBanner 
+    {
+        
+        width:00px;
+        height: 300px;
+
+    }
+    
+/**************** Videos ***********/
+    
+    .banner
+    {
+        width:400px;
+        height: 300px;
+        
+    }
+    .flexSection
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+         
+    
+    }
+    
+        
+ /********** Banda **************/       
+    
+    .flexBand
+    {
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    }
+
+    .flexLineUp
+    {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: flex-start;
+        
+        
+      
+    
+    }
+    .lineUp
+    {
+       
+        text-align: left;
+        
+    }
+    .titlelineUp
+    {
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    
+/************* Contact ******************/
+    
+    .flexContacto
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+       
+
+}
 
 
 
@@ -199,3 +552,7 @@ input
 
 
 
+
+
+
+}

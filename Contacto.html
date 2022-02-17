@@ -11,31 +11,48 @@
 </head>
 
 <hr class="topLine">
-<Body style="background-image:url(./Images/pattern4.png);">
+<Body id="grid" style="background-image:url(./Images/pattern4.png);">
 	<main>
         
-	<header> 
+	<header id="header"> 
 		<img src="./Images/Encabezado/Dethcapithrash_logo_.png" alt="">
 		
-
-		<nav class="menu"> 
+        <div>
+		<nav class="flexMenu"> 
 				
-			<ul> 
+			  
 				<span> <a href="./index.html"> INICIO </a> </span> 
 				<span> <a href="./Banda.html"> BANDA </a>    </span> 
 				<span> <a href="./Videos.html"> VIDEOS </a>    </span> 
 				<span> <a href="Galeria.html"> GALERIA </a>   </span> 
 				<span> <a href="./Conciertos.html"> CONCIERTOS </a>   </span> 
 				<span> <a href="./Contacto.html"> CONTACTO </a>  </span> 
-			</ul>
+			
+
 		</nav>
-		
+    </div>
 
 	</header>
-	<hr>
-    	<div class="contactBack">
-        <form action="">
-            <h3>  Envianos un mensaje </h3>	
+	
+    
+    	<div id="contenido" class="flexContacto">
+
+            
+           <section>
+               <h1 class="contacto">Email</h1>
+               <h2>deathcapithrashoficial@gmail.com</h2>
+               <h1 class="contacto">Carlos Andrés Cadena</h1>
+               <h2>Col (+57) 311 233 12 73</h2>
+           </section>
+           
+          
+           
+            
+
+
+           
+        <form action="" >
+            <h1 class="contacto">  Envianos un mensaje </h1>	
             <br>
                 <input type="text" name="Nombres" placeholder="Nombres *">
             <br>
@@ -51,9 +68,9 @@
     </main>
 
 	<hr>
-    <footer>
+    <footer id="pie">
 	
-        <h3>Siguenos</h3>
+        <h2>Siguenos</h2>
         <img src="./Images/Pie de pagina/Facebook_icon.png" alt="">	
         <p> Designed & Developed by Alejandro Ospina</p>
         <p> &copy Copyright 2022 Deathcapithrash</p>
