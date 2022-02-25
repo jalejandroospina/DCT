@@ -15,7 +15,9 @@
 }
 header
 {
-    background-color:  black;
+    background: linear-gradient( rgba(0, 0, 0, 0.733) 75%, rgba(0, 0, 0, 0) 100% );
+    
+
     text-align: center;
     padding: 10px;
     
@@ -37,35 +39,63 @@ section
 
 }
 
+.mainImage
+{
+    background-image: url(./Images/Contenido/SecuestradoAlbum.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
+
+
+
+span
+{
+    
+    padding: 30px;
+    
+    margin-bottom: 30px;
+    border-bottom: solid 3px  rgba(0, 0, 0, 0);
+}
 span a
 {
     color : white;
-	font-size: 150%;
+	font-size: 140%;
     padding: 20px;
     text-align: center; 
 }
 
+
+
+.banderaSpan{
+    border-bottom: solid 4px #ac0404;
+}
+.resaltado:hover
+{
+    color: #ac0404;
+}
+
+
 span:hover 
 {
+    
+    border-bottom: solid 4px #ac0404;
+    
    
-    border-bottom: solid 3px #ac0404;
-    
-    
 }
 
 
 h1
 {
 	color : white;
-	font-size: 300%;
+	font-size: 500%;
     text-align: center;
     ;
 }
 h2
 {
     color : white;
-	font-size: 200%;
+	font-size: 300%;
     text-align: center;
     
     
@@ -73,8 +103,9 @@ h2
 h3
 {
 	color : white;
-	font-size: 100%;
+	font-size: 200%;
     text-align: center;
+    letter-spacing: 1px;
     
 }
 a
@@ -105,10 +136,9 @@ li
     height: 1px; 
     color: #ac0404; 
     background-image: 
-    linear-gradient(to right, white, black);
+    linear-gradient(to right, white, #ac0404);
  
 }
-
 
 
 footer
@@ -183,16 +213,49 @@ input
     
 
 }
+
+.prueba
+{
+    width: 500px;
+    height: 360px;
+    margin: 50px;
+    background-color: #ac0404;
+   
+    
+}
+.prueba:hover
+{
+   
+    transform: scale(1.1,1.1);
+    opacity: 0.7;
+    
+}
+.imgSocial
+{
+    background-color: #ac0404;
+    border-radius: 10px;
+}
+.flexPrueba
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content:center;
+  
+}
+
 .banner
 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 400px;
-  background-color:#ac0404;
-  opacity:0.9;
+  justify-content:flex-end;
+  width: 100%;
+  height: 550px;
+  
+  
+
  
 }
 .lineUp
@@ -213,11 +276,23 @@ input
     height: 400px;
     
 }
+.gallery:hover
+{
+
+transform: scale(1.3,1.3);
+border-radius: 20px;
+border: solid 3px #ac0404;
+}
+
 .concerts
 {
     width:  512px;
     height: 288px;
     
+}
+.imgBanner
+{
+    margin-top: 40px;
 }
 
 /********** Grid Areas *********/
@@ -237,6 +312,7 @@ input
 nav
 { 
     grid-area: menu;
+    
 }
 #contenido
 {
@@ -245,6 +321,7 @@ nav
 #footer
 {
     grid-area: pie;
+    
 }
 
 
@@ -254,7 +331,7 @@ nav
 .flexSection
 {
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   align-items:flex-start;
   
 }
@@ -263,18 +340,24 @@ nav
 {
     display: flex;
     flex-direction: row;
-	justify-content: center;
-    align-items: baseline;  
+	justify-content:flex-start;
+
     
+}
+.flexDatos{
+    display: flex;
+    flex-direction: column;
+	justify-content:flex-end;
+
 }
 .flexMenu 
 {
  display: flex;
  text-align: center;
- justify-content: center;
- align-items: center;
- align-content: center;
- padding-top: 20px;
+ justify-content:center;
+
+
+
            
 }
 
@@ -301,7 +384,7 @@ justify-content: center;
 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: cneter;
+    justify-content: center;
     align-items: center;
     align-content: center;
 }
@@ -546,10 +629,48 @@ justify-content: center;
 
 }
 
+/*********** Animaciones *******/
+.logoAnim
+{
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+
+.titulo-animado {
+    animation-name: titulo;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+}
+/******** KeyFrames *******/
+@keyframes logo 
+{
+    from/* inicio */{
+        transform: scale(1.1,1.1)
+    }
+    to/* fin */{
+        transform: scale(1,1);
+        color:red;
+    }
+}
+@keyframes titulo {
+    from/* inicio */{
+        transform: translateY(-2000px);
+        opacity: 0;
+        color: deeppink;
+    }
+    to/* fin */{
+        opacity: 1;
+        color: deeppink;
+    }
+}
 
 
 
-
+ 
+ 
 
 
 
