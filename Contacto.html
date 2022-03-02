@@ -2,86 +2,137 @@
 
 <html lang="es">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>   DCT | Contacto  </title>
-	<link rel="stylesheet" href="estilos.css">
-	 
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            DCT | Contacto
+        </title>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="estilos.css">
 
-<hr class="topLine">
-<Body id="grid" style="background-image:url(./Images/pattern4.png);">
-	<main>
-        
-	<header id="header"> 
-		<img src="./Images/Encabezado/Dethcapithrash_logo_.png" alt="">
-		
-        <div>
-		<nav class="flexMenu"> 
-				
-			  
-				<span> <a href="./index.html"> INICIO </a> </span> 
-				<span> <a href="./Banda.html"> BANDA </a>    </span> 
-				<span> <a href="./Videos.html"> VIDEOS </a>    </span> 
-				<span> <a href="Galeria.html"> GALERIA </a>   </span> 
-				<span> <a href="./Conciertos.html"> CONCIERTOS </a>   </span> 
-				<span> <a href="./Contacto.html"> CONTACTO </a>  </span> 
-			
+    </head>
 
-		</nav>
-    </div>
+    <body id="grid" style="background-image:url(./Images/pattern4.png);">
+        <main>
 
-	</header>
-	
+            <header id="header">
+
+                <img src="./Images/Encabezado/LOGO.png" alt="" class="img-fluid">
+
+                <div class="flexMenu">
+                    <nav class="navbar navbar-expand-md ">
+
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-list"
+                                v="v"
+                                iewbox="0 0 16 16">
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="navbar-nav">
+
+                                <span class="banderaSpan ">
+                                    <a class="resaltado bandera " href="./index.html">
+                                        INICIO
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="resaltado " href="./Banda.html">
+                                        BANDA
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="resaltado " href="./Videos.html">
+                                        VIDEOS
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="resaltado " href="Galeria.html">
+                                        GALERIA
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="resaltado " href="./Conciertos.html">
+                                        CONCIERTOS
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="resaltado " href="./Contacto.html">
+                                        CONTACTO
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+
+            </header>
+
+           <div class="container">
+                <div id="contenido" class="flexContacto">
+                    <section>
+                        <h3 class="contacto">Email</h3>
+                        <h3>deathcapithrashoficial@gmail.com</h3>
+                        <h3 class="contacto">Carlos Andrés Cadena</h3>
+                        <h3>Col (+57) 311 233 12 73</h3>
+                    </section>           
+                <form action="" >
+                    <h3 class="contacto">  Envianos un mensaje </h3>	
+                    <br>
+                        <input type="text" name="Nombres" placeholder="Nombres *">
+                    <br>
+                        <input type="text" name="Email" placeholder="Email *">
+                        <br>
+                        <input type="text" name="Asunto" placeholder="Asunto *">
+                    <br>
+                        <input type="submit"value="Enviar" class="button">
+                
+                </form>
+                </div>
+            </div>    
+                
+            
+                   
     
-    	<div id="contenido" class="flexContacto">
-
-            
-           <section>
-               <h1 class="contacto">Email</h1>
-               <h2>deathcapithrashoficial@gmail.com</h2>
-               <h1 class="contacto">Carlos Andrés Cadena</h1>
-               <h2>Col (+57) 311 233 12 73</h2>
-           </section>
-           
-          
-           
-            
-
 
            
-        <form action="" >
-            <h1 class="contacto">  Envianos un mensaje </h1>	
-            <br>
-                <input type="text" name="Nombres" placeholder="Nombres *">
-            <br>
-                <input type="text" name="Email" placeholder="Email *">
-                <br>
-                <input type="text" name="Asunto" placeholder="Asunto *">
-            <br>
-                <input type="submit"value="Enviar" class="button">
-        
-        </form>
-    </div>
-        
-    </main>
+    
+           
 
-	<hr>
-    <footer id="pie">
-	
-        <h2>Siguenos</h2>
-        <img src="./Images/Pie de pagina/Facebook_icon.png" alt="">	
-        <p> Designed & Developed by Alejandro Ospina</p>
-        <p> &copy Copyright 2022 Deathcapithrash</p>
-    </footer>
+        </main>
 
+        <hr>
+        <footer id="pie">
 
+            <h2>Siguenos</h2>
+            <img src="./Images/Pie de pagina/Facebook_icon.png" alt="">
+            <p>
+                Designed & Developed by Alejandro Ospina</p>
+            <p>
+                &copy Copyright 2022 Deathcapithrash</p>
+        </footer>
 
+        <script src="./js/bootstrap.js"></script>
+    </body>
 
-</Body>
-
-
-
-</html> 
-
+</html>
