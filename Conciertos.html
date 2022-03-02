@@ -2,80 +2,214 @@
 
 <html lang="es">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>   DCT | Conciertos   </title>
-	<link rel="stylesheet" href="estilos.css">
-	 
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            DCT | Conciertos
+        </title>
 
-<hr class="topLine">	
-<Body style="background-image:url(./Images/pattern4.png);">
-	<main>
-        
-        <header id="header"> 
-		
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="estilos.css">
 
-			<img src="./Images/Encabezado/LOGO.png" alt="">
-	
-			<nav class="flexMenu"> 
-				
-				<span > <a  href="./index.html"> INICIO  </a> </span> 
-				<span> <a class= "resaltado " href="./Banda.html"> BANDA </a>    </span> 
-				<span> <a class= "resaltado " href="./Videos.html"> VIDEOS </a>    </span> 
-				<span> <a  class= "resaltado "href="Galeria.html"> GALERIA </a>   </span> 
-				<span class="banderaSpan"> <a  class= "resaltado bandera " href="./Conciertos.html"> CONCIERTOS </a>   </span> 
-				<span> <a  class= "resaltado "href="./Contacto.html"> CONTACTO </a>  </span> 
-			
-		</nav>
-	
-		
-		</header>
-	
-         <div class="flexConcerts">  		
+    </head>
 
-        <section>
-            <h2>Fortaleza Rock Cajica 2020</h2>
-                <img src="./Images/Conciertos//DCT - FortalezaRock 2020.jpg" alt="" class="concerts">
-        </section>
+    <hr class="topLine">
+    <body style="background-image:url(./Images/pattern4.png);">
+        <main>
 
-        <section>
-            <h2>Epidemic 2020 - Cajica</h2>
-            <img src="./Images/Conciertos/DCT Epidemic 2020.jpg" alt="" class="concerts">
-        </section>
+            <header id="header">
 
-        <section>
-            <h2>Fortaleza Rock Cajica 2019</h2>
-            <img src="./Images/Conciertos//DCT - Fortaleza Rock 2019.png" alt="" >
-        </section>
+                <img src="./Images/Encabezado/LOGO.png" alt="" class="img-fluid">
 
-        <section>
-            <h2> SOULMETALFEST 2016 - Cajica</h2>
-            <img src="./Images/Conciertos/DCT- Soulmetalfest.png" alt="">
-        </section>
+                <div class="flexMenu">
+                    <nav class="navbar navbar-expand-md ">
 
-        <section>
-            <h2> Pragore Bar - Zipaquirá 2015</h2>
-            <img src="./Images/Conciertos/DCT- Ursus.png" alt="">
-        </section>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
 
-        <section>
-            <h2> Gato Tuerto Bar - Zipaquirá 2015</h2>
-            <img src="./Images/Conciertos/DCT- Gato Tuerto.png" alt="" >
-        </section>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-list"
+                                v="v"
+                                iewbox="0 0 16 16">
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
 
-        <section>
-            <h2> Festival de Juventudes - Chía 2014</h2>
-            <img src="./Images/Conciertos/DCT - JuvChia 2014.png" alt="">
-        </section>
+                        </button>
 
-        <section>
-            <h2> Festival de Juventudes - Cajica 2013</h2>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="navbar-nav">
+
+                                <span class="banderaSpan ">
+                                    <a class="resaltado bandera " href="./index.html">
+                                        INICIO
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="resaltado " href="./Banda.html">
+                                        BANDA
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="resaltado " href="./Videos.html">
+                                        VIDEOS
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="resaltado " href="Galeria.html">
+                                        GALERIA
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="resaltado " href="./Conciertos.html">
+                                        CONCIERTOS
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="resaltado " href="./Contacto.html">
+                                        CONTACTO
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+
+            </header>
+
+            <div class="container flexConcerts">
+                <div class="card " style="width: 18rem;">
+                    <img
+                        src="./Images/Conciertos//DCT - FortalezaRock 2020.jpg"
+                        class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fortaleza Rock Cajica 2020</h5>
+
+                    </div>
+                </div>
+
+                <div class="card " style="width: 18rem;">
+                    <img
+                        src="./Images/Conciertos/DCT Epidemic 2020.jpg"
+                        class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Epidemic 2020 - Cajica</h5>
+
+                    </div>
+                </div>
+
+                <div class="card " style="width: 18rem;">
+                    <img
+                        src="./Images/Conciertos/DCT - Fortaleza Rock 2019.png"
+                        class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fortaleza Rock Cajica 2019</h5>
+
+                    </div>
+                </div>
+                <div class="card " style="width: 18rem;">
+                    <img
+                        src="./Images/Conciertos//DCT- Soulmetalfest.png"
+                        class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SOULMETALFEST 2016 - Cajica</h5>
+
+                    </div>
+                </div>
+                <div class="card " style="width: 18rem;">
+                    <img src="./Images/Conciertos//DCT- Ursus.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pragore Bar - Zipaquirá 2015</h5>
+
+                    </div>
+                </div>
+
+                <div class="card " style="width: 18rem;">
+                    <img
+                        src="./Images/Conciertos/DCT- Gato Tuerto.png"
+                        class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato Tuerto Bar - Zipaquirá 2015</h5>
+
+                    </div>
+                </div>
+
+                <div class="card " style="width: 18rem;">
+                    <img
+                        src="./Images/Conciertos/DCT - JuvChia 2014.png"
+                        class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Festival de Juventudes - Chía 2014</h5>
+
+                    </div>
+                </div>
+
+                <div class="card " style="width: 18rem;">
+                    <img
+                        src="./Images/Conciertos/DCT - JuvCajica 2013_alqu.png"
+                        class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Festival de Juventudes - Cajica 2013</h5>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
             
-            <img src="./Images/Conciertos/DCT - JuvCajica 2013_alqu.png" alt="">
-        </section>
-    </div>  
+
+
+          
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </main>
 
@@ -90,7 +224,7 @@
 
 
 
-
+    <script src="./js/bootstrap.js"></script>
 </Body>
 
 
