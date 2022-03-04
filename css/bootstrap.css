@@ -3016,12 +3016,12 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: black;
   border-color: #0d6efd;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
+  background-color: #b14848;
   border-color: #0a58ca;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -4074,7 +4074,7 @@ textarea.form-control-lg {
   line-height: 1;
   background-color: transparent;
   border: 1px solid #ac0404;
-  background-color: ;
+  /*background-color: ;*/
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
@@ -4501,11 +4501,11 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color:#ac0404;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  margin: 10px;
+  margin: 20px;
   text-align: center;
   
 }
@@ -4539,6 +4539,7 @@ textarea.form-control-lg {
 
 .card-title {
   margin-bottom: 0.5rem;
+  color: Black;
 }
 
 .card-subtitle {

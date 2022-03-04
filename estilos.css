@@ -197,7 +197,12 @@ input
 
 }
 
-
+.noticias
+{
+ height: 640px;
+ width: 1200px;
+ background-color: gainsboro;
+}
 
 .prueba 
 {
@@ -295,6 +300,8 @@ input
     margin-left: 120px;
     color: #ac0404;
     margin-bottom: 40px;
+    margin-top: 30px;
+
 }
 .fecha
 {
@@ -352,11 +359,11 @@ nav
 .flexSection 
 {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 30px;
+    flex-direction: row;
+    
 
 }
+
 
 .flexContacto 
 {
