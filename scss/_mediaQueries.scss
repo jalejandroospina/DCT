@@ -1,0 +1,211 @@
+/********* Media Queries ******/
+
+/*******Smartphone********/
+@media (max-width : 480px) 
+{
+    #grid 
+    {
+        display: grid;
+        grid-template-areas: "header" "menu " "contenido" "pie";
+        grid-template-columns: 100%;
+    }
+
+    .flexMenu 
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+
+    }
+
+    .flexContacto 
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+    .flexSection 
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+
+    }
+    .imgBanner
+    {
+
+        width: 400px;
+    }
+    iframe 
+    {
+        width: 400px;
+    }
+    .banner 
+    {
+        width: 400px;
+        height: 150px;
+
+    }
+    .line 
+    {
+        color: black;
+    }
+    /************** Band *****************/
+    .flexBand 
+    {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flexLineUp 
+    {
+
+        flex-direction: column;
+        margin-left: 20px;
+
+    }
+    .lineUp 
+    {
+        margin-left: 0;
+
+    }
+    .titlelineUp 
+    {
+        text-align: left;
+        margin-left: 25px;
+    }
+    .imgLineUp 
+    {
+
+        width: 400px;
+    }
+    /************** Videos *****************/
+    iframe 
+    {
+        width: 400px;
+        height: 300px;
+    }
+
+    /************** Gallery *****************/
+    .flexGallery 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+    /************** Concerts *****************/
+    .flexConcerts 
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .concerts 
+    {
+        width: 400px;
+
+    }
+    /************** Contact*****************/
+    form 
+    {
+
+      
+
+    }
+}
+    /************Tablet******************/
+    @media (min-width: 481px) and (max-width: 1023px) 
+    {
+        #grid 
+        {
+            display: grid;
+            grid-template-areas: "header" "menu " "contenido" "pie";
+            grid-template-columns: 100%;
+        }
+        .flexMenu 
+        {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+        }
+        .imgBanner 
+        {
+
+            width: 0;
+            height: 300px;
+
+        }
+
+        /**************** Videos ***********/
+
+        .banner 
+        {
+            width: 400px;
+            height: 300px;
+
+        }
+        .flexSection 
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+        }
+
+        /********** Banda **************/
+
+        .flexBand 
+        {
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .flexLineUp 
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+        }
+        .lineUp 
+        {
+
+            text-align: left;
+
+        }
+        .titlelineUp 
+        {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        /************* Contact ******************/
+
+        .flexContacto 
+        {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+    }

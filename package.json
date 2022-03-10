@@ -1,0 +1,19 @@
+{
+  "name": "dct",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalejandroospina/DCT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalejandroospina/DCT/issues"
+  },
+  "homepage": "https://github.com/jalejandroospina/DCT#readme",
+  "description": ""
+}

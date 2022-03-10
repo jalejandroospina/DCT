@@ -1,0 +1,74 @@
+/********** Flex ********/
+
+.flexSection 
+{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+
+.flexContacto 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+
+}
+.flexDatos 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.flexMenu 
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flexBand 
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexLineUp 
+{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+
+}
+.flexGallery 
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.flexMain 
+{
+    display: flex;
+}
+.flexConcerts
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}

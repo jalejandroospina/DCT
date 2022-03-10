@@ -1,0 +1,24 @@
+/********** Grid Areas *********/
+#grid 
+{
+    display: grid;
+    grid-template-areas: "menu" "contenido" "pie";
+}
+#header 
+{
+    grid-area: header;
+}
+nav 
+{
+    grid-area: menu;
+
+}
+#contenido 
+{
+    grid-area: contenido;
+}
+#footer 
+{
+    grid-area: pie;
+
+}

@@ -1,0 +1,153 @@
+@import "clases";
+@import "flex";
+@import "grids";
+@import"mediaQueries";
+//Variables
+$mainColor:#ac0404;
+
+/*Reset*/
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: Bebas Neue, sans-serif;
+}
+/********* Generales******/
+header 
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.89) 75%, rgba(0, 0, 0, 0) 100%);
+    text-align: center;
+    padding: 10px;
+}
+body 
+{
+    background-color: black;
+}
+footer 
+{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 70%;
+    letter-spacing: 1px;
+}
+h1 
+{
+    color: white;
+    font-size: 500%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
+}
+h2 
+{
+    color: white;
+    font-size: 400%;
+    text-align: center;
+
+}
+h2  
+{
+    a
+    {
+    text-decoration: none;
+    color: white;
+    }
+}
+h3 
+{
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+h4
+{
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    letter-spacing: 3px;
+}
+a 
+{
+    color: white;
+    padding-top: 20px;
+    text-decoration: none;
+
+}
+  
+
+p 
+{
+    color: white;
+   
+   
+
+}
+li 
+{
+    text-decoration: none;
+}
+
+span 
+{
+    padding: 30px;
+    margin-bottom: 30px;
+    border-bottom: solid 3px rgba(0, 0, 0, 0);
+    a
+    {
+        color: white;
+        font-size: 140%;
+        padding: 20px;
+        text-align: center; 
+    }
+    &:hover
+    {
+        border-bottom: solid 4px $mainColor;
+    }
+}
+section 
+{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    p
+    {
+        padding-top: 20px;
+        letter-spacing: 1px;
+    }
+
+}
+article 
+{
+    padding-top: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+
+}
+
+form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+
+}
+input 
+{
+    width: 320px;
+    padding: 6px;
+    margin-bottom: 20px;
+}
+
+
+

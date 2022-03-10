@@ -1,0 +1,176 @@
+/******* Clases ****/
+
+/*index*/
+
+.mainImage 
+{
+    background-image: url("../Images/Contenido/SecuestradoAlbum.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.banderaSpan 
+{
+    border-bottom: solid 4px #ac0404;
+}
+.resaltado:hover 
+{
+    color: #ac0404;
+}
+.secuestrado
+{
+    font-size: 600%;
+    color: #ac0404;
+}
+.fecha
+{
+    font-size: 200%;
+}
+.line 
+{
+
+    width: 180px;
+    height: 10px;
+    color: #ac0404;
+    background-image: linear-gradient(to right, white, #ac0404);
+
+}
+
+.noticias
+{
+ height: 640px;
+ width: 1200px;
+ background-color: gainsboro;
+}
+
+.prueba 
+{
+    width: 500px;
+    height: 360px;
+    margin: 50px;
+    background-color: #ac0404;
+
+}
+.prueba:hover 
+{
+
+    transform: scale(1.1,1.1);
+    opacity: 0.7;
+
+}
+
+
+
+.banner 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 550px;
+
+}
+/*Footer*/
+.endLine
+{
+    height: 2px; 
+    color: #ac0404; 
+    background-image: 
+    linear-gradient(to right, red, #ac0404);
+}
+
+
+.imgSocial 
+{
+    background-color: #ac0404;
+    border-radius: 10px;
+    
+}
+
+/*Conciertos*/
+.concerts
+ {
+    width: 512px;
+    height: 288px;
+
+}
+/* Galeria*/
+.gallery 
+{
+    width: 400px;
+    height: 400px;
+
+}
+.gallery:hover
+ {
+
+    transform: scale(1.3,1.3);
+    border-radius: 0.25rem;
+    border: solid 3px #ac0404;
+    opacity: 0.9;
+}
+/*Banda*/
+.members
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+.descripcion
+{
+    font-family: Verdana, Tahoma, sans-serif;
+    line-height: 30px;
+    
+}
+.lineUp 
+{
+
+    
+    text-align: left;
+    font-size: 140%;
+    margin-top: 10px;
+    
+    
+
+}
+.role
+{
+    color: #ac0404;
+    letter-spacing: 2px;
+    font-size: 90%;
+}
+.titlelineUp 
+{
+    text-align: left;
+    margin-left: 120px;
+    color: #ac0404;
+    margin-bottom: 40px;
+    margin-top: 30px;
+
+}
+.fecha
+{
+    text-align: left;
+    font-size: 350%;
+    margin :0;
+}
+
+.imgLineUp 
+    {
+
+        margin-top: 10px;
+    }
+/*Contacto*/
+.contacto 
+{
+
+    color: #ac0404;
+
+}
+
+.button 
+{
+    width: 60px;
+
+}
