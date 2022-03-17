@@ -24,8 +24,8 @@
 }
 
 .line {
-  width: 180px;
-  height: 10px;
+  width: 215px;
+  height: 2px;
   color: #ac0404;
   background-image: linear-gradient(to right, white, #ac0404);
 }
@@ -59,14 +59,7 @@
 
 /*Footer*/
 .endLine {
-  height: 2px;
   color: #ac0404;
-  background-image: linear-gradient(to right, red, #ac0404);
-}
-
-.imgSocial {
-  background-color: #ac0404;
-  border-radius: 10px;
 }
 
 /*Conciertos*/
@@ -510,6 +503,10 @@ input {
   width: 320px;
   padding: 6px;
   margin-bottom: 20px;
+}
+
+svg {
+  fill: #ac0404;
 }
 
 /*# sourceMappingURL=estilos.css.map */

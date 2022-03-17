@@ -1,5 +1,5 @@
 /******* Clases ****/
-
+@import"colors";
 /*index*/
 
 .mainImage 
@@ -12,16 +12,16 @@
 
 .banderaSpan 
 {
-    border-bottom: solid 4px #ac0404;
+    border-bottom: solid 4px $mainColor;
 }
 .resaltado:hover 
 {
-    color: #ac0404;
+    color: $mainColor;
 }
 .secuestrado
 {
     font-size: 600%;
-    color: #ac0404;
+    color: $mainColor;
 }
 .fecha
 {
@@ -30,10 +30,10 @@
 .line 
 {
 
-    width: 180px;
-    height: 10px;
-    color: #ac0404;
-    background-image: linear-gradient(to right, white, #ac0404);
+    width: 215px;
+    height: 2px;
+    color: $mainColor;
+    background-image: linear-gradient(to right, white, $mainColor);
 
 }
 
@@ -49,7 +49,7 @@
     width: 500px;
     height: 360px;
     margin: 50px;
-    background-color: #ac0404;
+    background-color: $mainColor;
 
 }
 .prueba:hover 
@@ -75,19 +75,17 @@
 /*Footer*/
 .endLine
 {
-    height: 2px; 
-    color: #ac0404; 
-    background-image: 
-    linear-gradient(to right, red, #ac0404);
+    color: $mainColor;
 }
 
 
-.imgSocial 
+.social 
 {
-    background-color: #ac0404;
-    border-radius: 10px;
+ 
+    
     
 }
+
 
 /*Conciertos*/
 .concerts
@@ -108,7 +106,7 @@
 
     transform: scale(1.3,1.3);
     border-radius: 0.25rem;
-    border: solid 3px #ac0404;
+    border: solid 3px $mainColor;
     opacity: 0.9;
 }
 /*Banda*/
@@ -136,7 +134,7 @@
 }
 .role
 {
-    color: #ac0404;
+    color: $mainColor;
     letter-spacing: 2px;
     font-size: 90%;
 }
@@ -144,7 +142,7 @@
 {
     text-align: left;
     margin-left: 120px;
-    color: #ac0404;
+    color: $mainColor;
     margin-bottom: 40px;
     margin-top: 30px;
 
@@ -165,7 +163,7 @@
 .contacto 
 {
 
-    color: #ac0404;
+    color: $mainColor;
 
 }
 

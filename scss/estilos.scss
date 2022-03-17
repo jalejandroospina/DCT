@@ -2,8 +2,10 @@
 @import "flex";
 @import "grids";
 @import"mediaQueries";
+@import"colors";
+
 //Variables
-$mainColor:#ac0404;
+
 
 /*Reset*/
 * 
@@ -21,20 +23,20 @@ header
 }
 body 
 {
-    background-color: black;
+    background-color: $backColor;
 }
 footer 
 {
-    background-color: black;
+    background-color:  $backColor;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: $textColor;
     font-size: 70%;
     letter-spacing: 1px;
 }
 h1 
 {
-    color: white;
+    color: $textColor;
     font-size: 500%;
     text-align: center;
     padding: 0;
@@ -43,7 +45,7 @@ h1
 }
 h2 
 {
-    color: white;
+    color: $textColor;
     font-size: 400%;
     text-align: center;
 
@@ -53,12 +55,12 @@ h2
     a
     {
     text-decoration: none;
-    color: white;
+    color: $textColor;
     }
 }
 h3 
 {
-    color: white;
+    color: $textColor;
     font-size: 200%;
     text-align: center;
     letter-spacing: 1px;
@@ -66,14 +68,14 @@ h3
 }
 h4
 {
-    color: white;
+    color: $textColor;
     font-size: 100%;
     text-align: center;
     letter-spacing: 3px;
 }
 a 
 {
-    color: white;
+    color: $textColor;
     padding-top: 20px;
     text-decoration: none;
 
@@ -82,7 +84,7 @@ a
 
 p 
 {
-    color: white;
+    color: $textColor;
    
    
 
@@ -99,7 +101,7 @@ span
     border-bottom: solid 3px rgba(0, 0, 0, 0);
     a
     {
-        color: white;
+        color: $textColor;
         font-size: 140%;
         padding: 20px;
         text-align: center; 
@@ -111,8 +113,9 @@ span
 }
 section 
 {
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
+    @include flex-column;
     margin: 50px;
     text-align: center;
     justify-content: center;
@@ -135,8 +138,9 @@ article
 
 form 
 {
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
+    @include flex-column;
     align-items: center;
     justify-content: center;
     padding: 100px;
@@ -147,6 +151,10 @@ input
     width: 320px;
     padding: 6px;
     margin-bottom: 20px;
+}
+svg
+{
+    fill:$mainColor;
 }
 
 

@@ -1,26 +1,40 @@
 /********** Flex ********/
+@mixin flex-row
+{
+    display: flex;
+    flex-direction: row; 
+}
+@mixin flex-column 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .flexSection 
 {
-    display: flex;
-    flex-direction: row;
-    
+    //display: flex;
+    //flex-direction: row;
+     @include flex-row;
 
 }
 
 
 .flexContacto 
 {
-    display: flex;
-    flex-direction: row;
+    //display: flex;
+    //flex-direction: row;
+    @include flex-row;
     justify-content: center;
     align-items: baseline;
 
 }
 .flexDatos 
 {
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
+    @include flex-column;
     justify-content: flex-end;
 
 }
@@ -36,8 +50,9 @@
 .flexBand 
 {
 
-    display: flex;
-    flex-direction: column;
+   // display: flex;
+   //flex-direction: column;
+    @include flex-column;
     align-items: center;
     justify-content: center;
 }
@@ -45,8 +60,9 @@
 .flexLineUp 
 {
     margin-left: 150px;
-    display: flex;
-    flex-direction: row;
+    //display: flex;
+    //flex-direction: row;
+    @include flex-row;
     align-items: flex-start;
     justify-content: left;
 
@@ -65,8 +81,9 @@
 }
 .flexConcerts
 {
-    display: flex;
-    flex-direction: row;
+    //display: flex;
+    //flex-direction: row;
+    @include flex-row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
