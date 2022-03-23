@@ -117,8 +117,7 @@ span
 }
 section 
 {
-    //display: flex;
-    //flex-direction: column;
+    
     @include flex-column;
     margin: 50px;
     text-align: center;
@@ -142,8 +141,7 @@ article
 
 form 
 {
-    //display: flex;
-    //flex-direction: column;
+    
     @include flex-column;
     align-items: center;
     justify-content: center;
