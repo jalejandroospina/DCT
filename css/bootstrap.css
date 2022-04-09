@@ -92,6 +92,8 @@ hr {
   border: 0;
   opacity: 0.25;
   */
+  
+  
 }
 
 hr:not([size]) {
@@ -348,10 +350,14 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0;
+  margin-bottom: 20px;
+  width: 320px;
+  padding: 6px;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+
+
 }
 
 button,
@@ -4509,7 +4515,7 @@ textarea.form-control-lg {
   margin: 20px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-  background-color: rgba(131, 128, 128, 0.075)
+  background-color: rgba(131, 128, 128, 0)
   
 }
 
@@ -4549,9 +4555,14 @@ textarea.form-control-lg {
   
 }
 
+
 .card-subtitle {
-  margin-top: -0.25rem;
-  margin-bottom: 0;
+  /*margin-top: -0.25rem;
+  margin-bottom: 0; 
+  margin-bottom: 0.5rem;*/
+  color: gainsboro;
+  font-size: 140%;
+  
 }
 .card-text
 {
@@ -6277,10 +6288,11 @@ textarea.form-control-lg {
   flex-direction: column;
   max-width: 100%;
   visibility: hidden;
-  background-color: #fff;
+  background-color: black;
   background-clip: padding-box;
   outline: 0;
   transition: transform 0.3s ease-in-out;
+  
 }
 @media (prefers-reduced-motion: reduce) {
   .offcanvas {
@@ -6326,7 +6338,9 @@ textarea.form-control-lg {
   flex-grow: 1;
   padding: 1rem 1rem;
   overflow-y: auto;
+  
 }
+
 
 .offcanvas-start {
   top: 0;
@@ -6334,6 +6348,7 @@ textarea.form-control-lg {
   width: 400px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(-100%);
+  
 }
 
 .offcanvas-end {

@@ -1,10 +1,14 @@
 /******* Clases ****/
 /*index*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=PT+Sans+Narrow:wght@700&display=swap');
+
+
 .mainImage {
   background-image: url("../Images/Contenido/SecuestradoAlbum.jpeg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
 }
 
 
@@ -25,12 +29,15 @@
 
 .lanzamiento 
 {
-  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 5px;
 }
 .secuestrado {
-  padding-top: 5px;
+  padding-top: 20px;
   font-size: 600%;
   color: #ac0404;
+  
 }
 
 .fecha {
@@ -75,10 +82,16 @@
 /*Footer*/
 .social
 {
-  padding-top: 10px;
+  padding-top: 4px;
+  font-size: 250%;
 }
 .endLine {
+
+  background-color: #ac0404;
   color: #ac0404;
+  padding: 1px;
+  
+  
 }
 
 /*Conciertos*/
@@ -88,22 +101,50 @@
 }
 
 /* Galeria*/
+
 .gallery {
-  width: 400px;
-  height: 400px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+
+  
 }
 
-.gallery:hover {
-  transform: scale(1.3, 1.3);
-  border-radius: 0.25rem;
-  border: solid 3px #ac0404;
-  opacity: 0.9;
+.gallery-item {
+	flex: 1 0 24rem;
+	margin: 1rem;
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 400px;
+  height: 400px;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.3);
+  
+  
+}
+.seeMore
+{
+  font-size: 200%;
 }
 
 /*Banda*/
 .members {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
+.name
+{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  
+}
+
 
 .descripcion {
   font-family: Verdana, Tahoma, sans-serif;
@@ -114,6 +155,7 @@
   text-align: left;
   font-size: 140%;
   margin-top: 10px;
+  color: gainsboro;
 }
 
 .role {
@@ -134,6 +176,7 @@
   text-align: left;
   font-size: 350%;
   margin: 0;
+  
 }
 
 .imgLineUp {
@@ -144,6 +187,7 @@
 /*Contacto*/
 .contacto {
   color: #ac0404;
+  font-size: 300%;
 }
 
 .button {
@@ -193,10 +237,11 @@
 
 .flexGallery {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: wrap;
+ 
+ /* justify-content: center;
   align-items: center;
-  align-content: center;
+  align-content: center;*/
 }
 
 .flexMain {
@@ -261,28 +306,70 @@ nav {
   .flexSection {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: flex-start;
+    text-align:center;
+    justify-content: flex-end;
     align-items: center;
     align-content: center;
   }
-
-  .imgBanner {
-    width: 400px;
+  .flexFooter
+  {
+    display: flex;
+    flex-direction:row;
+    
   }
+  
+
+  
 
   iframe {
     width: 400px;
   }
 
-  .banner {
-    width: 400px;
-    height: 150px;
-  }
 
   .line {
     color: black;
   }
+  .banderaSpan {
+    border-bottom: none;
+  }
+  
+  .resaltado:hover {
+    color: #ac0404;
+  }
+  span
+  {
+    padding: 50px;
+  }
+  span:hover {
+    border-bottom: none;
+  }
+  /******** Index **************/
+  .banner {
+    width: 300px;
+    height: 240px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    
+  }
+  .lanzamiento
+  {
+    font-size: 150%;
+    padding: 0%;
+    
+  }
+  .secuestrado
+  {
+    font-size: 240%;
+    padding-top: 0px;
+    
+  }
+ 
+  
 
   /************** Band *****************/
   .flexBand {
@@ -304,38 +391,81 @@ nav {
   .titlelineUp {
     text-align: left;
     margin-left: 25px;
+    font-size: 300%;
+
   }
 
   .imgLineUp {
-    width: 400px;
+    width: 335px;
+    margin-bottom: 10px;
   }
+  .imgMembers
+  {
+    scale: 138%;
+    margin-bottom: 30px;
+  }
+ .descripcion
+ {
+   text-justify:distribute;
+ }
 
   /************** Videos *****************/
   iframe {
-    width: 400px;
-    height: 300px;
+    width: 335px;
+    height: 225px;
   }
 
   /************** Gallery *****************/
   .flexGallery {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction:column;
     align-content: center;
+    
+    
   }
+  
+  .gallery-image
+  {
+  scale: 80%;
+  }
+  .gallery-image:hover {
+    transform: scale(1.1);
+    
+    
+  }
+  
 
   /************** Concerts *****************/
   .flexConcerts {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
+    
   }
 
-  .concerts {
-    width: 400px;
-  }
+  
 
   /************** Contact*****************/
+  .flexContacto {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    align-content: center;
+  }
+  .email
+  {
+    font-size:150%;
+  }
+  .container-fluid
+  {
+    margin-bottom: 30px;
+    
+  }
+  
+
+ 
+
+
 }
 /************Tablet******************/
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -353,22 +483,37 @@ nav {
     align-items: center;
     align-content: center;
   }
+ /**************** Index ***********/
+ .banner {
+  width: 700px;
+  height: 400px;
+  text-align: center;
+}
 
-  .imgBanner {
-    width: 0;
-    height: 300px;
-  }
+.flexSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.lanzamiento
+{
+  font-size: 200%;
+  padding: 0%;
+  
+}
+.secuestrado
+{
+  font-size: 400%;
+  padding-top: 0px;
+  
+}
 
   /**************** Videos ***********/
-  .banner {
-    width: 400px;
-    height: 300px;
-  }
-
-  .flexSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  iframe {
+    width: 700px;
+    height: 400px;
   }
 
   /********** Banda **************/
@@ -394,6 +539,25 @@ nav {
     text-align: left;
     margin-left: 20px;
   }
+  /********* ****Galeria ************/
+  .flexGallery {
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: center;
+    
+    
+  }
+  /************** Concerts *****************/
+  .flexConcerts {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .col-md-3 {
+    
+    width:45%;
+  }
 
   /************* Contact ******************/
   .flexContacto {
@@ -401,7 +565,14 @@ nav {
     flex-direction: column-reverse;
     align-items: flex-start;
   }
+  .container-fluid
+  {
+    margin-bottom: 30px;
+    
+  }
 }
+
+
 /*Reset*/
 * {
   margin: 0;
@@ -418,16 +589,20 @@ header {
 }
 
 body {
-  background-color: black;
+  
+  background-color:black;
+  background-image: url(../Images/rebel.png);
 }
 
 footer {
   background-color: black;
-  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
   color: white;
   font-size: 70%;
   letter-spacing: 1px;
+  background-image: url(../Images/pattern4.png);
 }
 
 h1 {
@@ -468,6 +643,10 @@ a {
   color: white;
   padding-top: 20px;
   text-decoration: none;
+}
+a:hover
+{
+  color: #ac0404;
 }
 
 p {
@@ -522,15 +701,18 @@ form {
   padding: 100px;
 }
 
-input {
-  width: 320px;
-  padding: 6px;
-  margin-bottom: 20px;
-}
-
 svg {
   fill: #ac0404;
-  margin: 10px;
+  margin-right: 20px;
+ 
+  
 }
 
-/*# sourceMappingURL=estilos.css.map */
+
+.divBack
+{
+  background-image: url("../Images/pattern2.png");
+  
+}
+
+
