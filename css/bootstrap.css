@@ -97,7 +97,7 @@ hr {
 }
 
 hr:not([size]) {
-  height: 1px;
+  height: 2px;
 }
 
 
