@@ -1,211 +1,312 @@
 /********* Media Queries ******/
-
 /*******Smartphone********/
-@media (max-width : 480px) 
-{
-    #grid 
-    {
-        display: grid;
-        grid-template-areas: "header" "menu " "contenido" "pie";
-        grid-template-columns: 100%;
-    }
+@media (max-width: 480px) {
+  #grid {
+    display: grid;
+    grid-template-areas: "header" "menu " "content" "foot";
+    grid-template-columns: 100%;
+  }
 
-    .flexMenu 
-    {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: center;
+  .flexMenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+  }
 
-    }
+  .flexContact {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-    .flexContacto 
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+  .flexSection {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+  }
+  .flexFooter
+  {
+    display: flex;
+    flex-direction:row;
+    
+  }
+  
 
-    }
-    .flexSection 
-    {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
+  
 
-    }
-    .imgBanner
-    {
+  iframe {
+    width: 400px;
+  }
 
-        width: 400px;
-    }
-    iframe 
-    {
-        width: 400px;
-    }
-    .banner 
-    {
-        width: 400px;
-        height: 150px;
 
-    }
-    .line 
-    {
-        color: black;
-    }
-    /************** Band *****************/
-    .flexBand 
-    {
+  .line {
+    color: black;
+  }
+  .flagSpan {
+    border-bottom: none;
+  }
+  
+  .select:hover {
+    color: #ac0404;
+  }
+  span
+  {
+    padding: 50px;
+  }
+  span:hover {
+    border-bottom: none;
+  }
+  /******** Index **************/
+  .banner {
+    width: 300px;
+    height: 240px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    
+  }
+  .newAlbum
+  {
+    font-size: 150%;
+    padding: 0%;
+    
+  }
+  .titleAlbum
+  {
+    font-size: 240%;
+    padding-top: 0px;
+    
+  }
+ 
+  
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  /************** Band *****************/
+  .flexBand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .flexLineUp 
-    {
+  .flexLineUp {
+    flex-direction: column;
+    margin-left: 20px;
+  }
 
-        flex-direction: column;
-        margin-left: 20px;
+  .lineUp {
+    margin-left: 0;
+  }
 
-    }
-    .lineUp 
-    {
-        margin-left: 0;
+  .titlelineUp {
+    text-align: left;
+    margin-left: 25px;
+    font-size: 300%;
 
-    }
-    .titlelineUp 
-    {
-        text-align: left;
-        margin-left: 25px;
-    }
-    .imgLineUp 
-    {
+  }
 
-        width: 400px;
-    }
-    /************** Videos *****************/
-    iframe 
-    {
-        width: 400px;
-        height: 300px;
-    }
+  .imgLineUp {
+    width: 335px;
+    margin-bottom: 10px;
+  }
+  .imgMembers
+  {
+    scale: 138%;
+    margin-bottom: 30px;
+  }
+ .description
+ {
+   text-justify:distribute;
+ }
 
-    /************** Gallery *****************/
-    .flexGallery 
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-    }
-    /************** Concerts *****************/
-    .flexConcerts 
-    {
-        display: flex;
-        flex-direction: column;
+  /************** Videos *****************/
+  iframe {
+    width: 335px;
+    height: 225px;
+  }
 
-    }
-    .concerts 
-    {
-        width: 400px;
+  /************** Gallery *****************/
+  .flexGallery {
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    
+    
+  }
+  
+  .gallery-image
+  {
+  scale: 80%;
+  }
+  .gallery-image:hover {
+    transform: scale(1.1);
+    
+    
+  }
+  
+  
+  
 
-    }
-    /************** Contact*****************/
-    form 
-    {
+  /************** Concerts *****************/
+  .flexConcerts{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 30px;
+  }
 
-      
+  
 
-    }
+  /************** Contact*****************/
+  .flexContact {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    align-content: center;
+  }
+  .email
+  {
+    font-size:150%;
+  }
+  .container-fluid
+  {
+    margin-bottom: 30px;
+    
+  }
+  
+
+ 
+
+
 }
-    /************Tablet******************/
-    @media (min-width: 481px) and (max-width: 1023px) 
-    {
-        #grid 
-        {
-            display: grid;
-            grid-template-areas: "header" "menu " "contenido" "pie";
-            grid-template-columns: 100%;
-        }
-        .flexMenu 
-        {
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
+/************Tablet******************/
+@media (min-width: 481px) and (max-width: 1023px) {
+  #grid {
+    display: grid;
+    grid-template-areas: "header" "menu " "content" "foot";
+    grid-template-columns: 100%;
+  }
 
-        }
-        .imgBanner 
-        {
+  .flexMenu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+ /**************** Index ***********/
+ .banner {
+  width: 700px;
+  height: 400px;
+  text-align: center;
+}
 
-            width: 0;
-            height: 300px;
+.flexSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
 
-        }
+.newAlbum
+{
+  font-size: 200%;
+  padding: 0%;
+  
+}
+.titleAlbum
+{
+  font-size: 400%;
+  padding-top: 0px;
+  
+}
 
-        /**************** Videos ***********/
+  /**************** Videos ***********/
+  iframe {
+    width: 700px;
+    height: 400px;
+  }
 
-        .banner 
-        {
-            width: 400px;
-            height: 300px;
+  /********** Banda **************/
+  .flexBand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 
-        }
-        .flexSection 
-        {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
+  .flexLineUp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 
-        }
+  .lineUp {
+    text-align: left;
+  }
 
-        /********** Banda **************/
+  .titlelineUp {
+    text-align: left;
+    margin-left: 20px;
+  }
+  /********* ****Galeria ************/
 
-        .flexBand 
-        {
+  .flexGallery {
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: center;
+    
+    
+  }
+  .gallery-image {
+    display: block;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+  }
 
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
+  
+  
+  .gallery-image:hover {
+    transform: scale(1.2);
+    
+    
+  }
 
-        .flexLineUp 
-        {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
+  /************** Concerts *****************/
+  .flexConcerts {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .col-md-3 {
+    
+    width:45%;
+  }
 
-        }
-        .lineUp 
-        {
-
-            text-align: left;
-
-        }
-        .titlelineUp 
-        {
-            text-align: left;
-            margin-left: 20px;
-        }
-
-        /************* Contact ******************/
-
-        .flexContacto 
-        {
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: flex-start;
-        }
-
-    }
+  /************* Contact ******************/
+  .flexContact {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .container-fluid
+  {
+    margin-bottom: 30px;
+    
+  }
+}

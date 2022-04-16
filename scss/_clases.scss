@@ -1,174 +1,178 @@
-/******* Clases ****/
+
 @import"colors";
+
+
+/******* Clases ****/
 /*index*/
 
-.mainImage 
-{
+.mainImage {
     background-image: url("../Images/Contenido/SecuestradoAlbum.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-
-
-.banderaSpan 
-{
+  }
+  
+  .flagSpan {
     border-bottom: solid 4px $mainColor;
-}
-.resaltado:hover 
-{
+  }
+  
+  .select:hover {
     color: $mainColor;
-}
-.secuestrado
-{
-    font-size: 600%;
-    color: $mainColor;
-}
-.fecha
-{
-    font-size: 200%;
-}
-.line 
-{
-
-    width: 215px;
-    height: 2px;
-    color: $mainColor;
-    background-image: linear-gradient(to right, white, $mainColor);
-
-}
-
-.noticias
-{
- height: 640px;
- width: 1200px;
- background-color: gainsboro;
-}
-
-.prueba 
-{
-    width: 500px;
-    height: 360px;
-    margin: 50px;
-    background-color: $mainColor;
-
-}
-.prueba:hover 
-{
-
-    transform: scale(1.1,1.1);
-    opacity: 0.7;
-
-}
-
-
-
-.banner 
-{
+  }
+  .banner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
     height: 550px;
-
-}
-/*Footer*/
-.endLine
-{
-    color: $mainColor;
-}
-
-
-.social 
-{
+    
+  }
  
+  
+  .titleAlbum{
+    padding-top: 20px;
+    font-size: 600%;
+    color: $mainColor;
     
-    
+  }
+  .newAlbum
+{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 5px;
 }
-
-
-/*Conciertos*/
-.concerts
- {
+  
+  .date {
+    font-size: 200%;
+  }
+  
+  .line {
+    width: 215px;
+    height: 2px;
+    color:$mainColor;
+    background-image: linear-gradient(to right,$textColor,$mainColor);
+  }
+ 
+  .newsDate
+  {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 80%;
+  
+  }
+  
+  /*Footer*/
+  .endLine {
+    background-color: $mainColor;
+    color:$mainColor;
+    padding: 1px;
+  }
+  
+  /*Conciertos*/
+  .concerts {
     width: 512px;
     height: 288px;
+  }
+  
+  /* Galeria*/
+  .gallery {
 
-}
-/* Galeria*/
-.gallery 
-{
+    display: flex;
+    flex-wrap: wrap;
+  
+  
+    
+  }
+  
+  .gallery-item {
+    flex: 1 0 24rem;
+    margin: 1rem;
+    overflow: hidden;
+  }
+  
+  .gallery-image {
+    display: block;
     width: 400px;
     height: 400px;
-
-}
-.gallery:hover
- {
-
-    transform: scale(1.3,1.3);
-    border-radius: 0.25rem;
-    border: solid 3px $mainColor;
-    opacity: 0.9;
-}
-/*Banda*/
-.members
-{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.3);
    
-}
-.descripcion
-{
+  }
+  
+  /*Banda*/
+  .members {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  }
+  .name
+  {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    
+  }
+  
+  .description {
     font-family: Verdana, Tahoma, sans-serif;
     line-height: 30px;
-    
-}
-.lineUp 
-{
-
-    
+  }
+  
+  .lineUp {
     text-align: left;
     font-size: 140%;
     margin-top: 10px;
-    
-    
-
-}
-.role
-{
-    color: $mainColor;
+    color: $altColor;
+  }
+  
+  .role {
+    color:$mainColor;
     letter-spacing: 2px;
     font-size: 90%;
-}
-.titlelineUp 
-{
+    
+  }
+  
+  .titlelineUp {
     text-align: left;
     margin-left: 120px;
     color: $mainColor;
     margin-bottom: 40px;
-    margin-top: 30px;
-
-}
-.fecha
-{
+    padding-top: 50px;
+  }
+  
+  .date {
     text-align: left;
     font-size: 350%;
-    margin :0;
-}
+    margin: 0;
+  }
+  
+  .imgLineUp {
+    margin-top: 10px;
+  }
 
-.imgLineUp 
-    {
-
-        margin-top: 10px;
-    }
-/*Contacto*/
-.contacto 
+  .seeMore
 {
-
-    color: $mainColor;
-
+  font-size: 200%;
 }
-
-.button 
-{
+  
+  /*Contacto*/
+  .contact {
+    color:$mainColor;
+    font-size: 300%;
+  }
+  
+  .container-fluid
+  {
+    margin-bottom: 30px;
+    
+  }
+  
+  .button {
     width: 60px;
+  }
 
+.divBack
+{
+  background-image: url("../Images/pattern2.png");
+  
 }

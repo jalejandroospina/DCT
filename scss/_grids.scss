@@ -1,24 +1,21 @@
 /********** Grid Areas *********/
-#grid 
-{
+#grid {
     display: grid;
-    grid-template-areas: "menu" "contenido" "pie";
-}
-#header 
-{
+    grid-template-areas: "menu" "content" "foot";
+  }
+  
+  #header {
     grid-area: header;
-}
-nav 
-{
+  }
+  
+  nav {
     grid-area: menu;
-
-}
-#contenido 
-{
-    grid-area: contenido;
-}
-#footer 
-{
-    grid-area: pie;
-
-}
+  }
+  
+  #contenido {
+    grid-area: content;
+  }
+  
+  #footer {
+    grid-area: foot;
+  }

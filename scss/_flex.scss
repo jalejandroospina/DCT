@@ -9,31 +9,34 @@
     display: flex;
     flex-direction: column;
 }
+@mixin flex-column-reverse 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 
 
 
 .flexSection 
 {
-    //display: flex;
-    //flex-direction: row;
+   
      @include flex-row;
 
 }
 
 
-.flexContacto 
-{
-    //display: flex;
-    //flex-direction: row;
+.flexContact {
     @include flex-row;
     justify-content: center;
     align-items: baseline;
+  }
 
-}
 .flexDatos 
 {
-    //display: flex;
-    //flex-direction: column;
+   
     @include flex-column;
     justify-content: flex-end;
 
@@ -50,8 +53,7 @@
 .flexBand 
 {
 
-   // display: flex;
-   //flex-direction: column;
+  
     @include flex-column;
     align-items: center;
     justify-content: center;
@@ -60,14 +62,12 @@
 .flexLineUp 
 {
     margin-left: 150px;
-    //display: flex;
-    //flex-direction: row;
     @include flex-row;
     align-items: flex-start;
     justify-content: left;
 
 }
-.flexGallery 
+.flexGallery
 {
     display: flex;
     flex-flow: row wrap;
@@ -81,8 +81,6 @@
 }
 .flexConcerts
 {
-    //display: flex;
-    //flex-direction: row;
     @include flex-row;
     flex-wrap: wrap;
     justify-content: center;
